@@ -11,10 +11,10 @@ public interface Registry {
 	public List<String> lookup(String serviceName, String version);
 	
 	// 服务提供者注册服务
-	public void register(String serviceName);
+	public void register(String serviceName, Object service);
 	
 	// 服务提供者取消注册服务
-	public void unregister(String serviceName);
+	public void unregister(String serviceName, Object service);
 	
 	// 服务消费者订阅服务的消息。service = ip+port+serviceName+version
 	// 比如订阅服务关闭的消息，可以让客户端选择新的服务提供者
