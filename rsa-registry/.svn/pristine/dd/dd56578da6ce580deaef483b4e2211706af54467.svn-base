@@ -1,0 +1,11 @@
+package com.renren.rsa.registry;
+
+import java.net.InetSocketAddress;
+
+public interface RegistryLocator {
+	// 注册中心的地址
+	public Registry getRegistry(String registryAddress);
+	
+	public Registry getRegistry(InetSocketAddress registryAddress);
+	
+}

@@ -1,0 +1,5 @@
+package com.renren.rsa.registry;
+
+public interface RegistryLocator {
+
+}
